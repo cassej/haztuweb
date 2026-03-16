@@ -1,0 +1,11 @@
+# Cloudflare Pages configuration
+name: haztuweb-panama
+
+# Build configuration
+build:
+  command: bun run build
+  output: out
+
+# Environment variables
+env:
+  NODE_VERSION: "20"

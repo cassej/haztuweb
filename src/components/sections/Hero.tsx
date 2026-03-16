@@ -1,7 +1,7 @@
 'use client';
 
 import { useLanguage } from '@/contexts/LanguageContext';
-import Image from 'next/image';
+
 
 export function Hero() {
   const { t } = useLanguage();
@@ -44,11 +44,9 @@ export function Hero() {
           {/* Image */}
           <div className="relative">
             <div className="relative overflow-hidden rounded-3xl border border-[var(--glass-border)] bg-[var(--glass)] shadow-accent-5 backdrop-blur-sm">
-              <Image
+              <img
                 src="/images/hero-glass-ui.jpg"
                 alt="Glass UI interface"
-                width={640}
-                height={480}
                 className="h-auto w-full object-cover"
               />
               <div className="pointer-events-none absolute inset-0 rounded-3xl bg-gradient-to-t from-[oklch(0.98_0.002_240_/_0.2)] to-transparent" />
